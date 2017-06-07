@@ -3,11 +3,13 @@
 <br/>
 <br/>
 <br/>
+
 ## Install
 * https://store.unity.com/kr/download?ref=personal
 
 <br/>
 <br/>
+
 ## Asset 추가하기
 
 * Window > Asset Store 에서 검색 Space Shooter > 추가
@@ -18,6 +20,7 @@
 
 <br/>
 <br/>
+
 ## 배경 만들기
 
 * GameObject > 3D Object > Quad 생성
@@ -38,6 +41,7 @@
 
 <br/>
 <br/>
+
 ## 우주선 만들기
 
 * vehicle_playerShip 드래그해서 추가
@@ -92,6 +96,7 @@ public class PlayerController : MonoBehaviour {
 
 
 <br/>
+
 ### 우주선이 화면 밖으로 넘어가지 않도록 수정
 
 Create Empty 추가 > `box Collider` Component 추가
@@ -103,6 +108,7 @@ Create Empty 추가 > `box Collider` Component 추가
 
 <br/>
 <br/>
+
 ## 운석 만들기
 
 Models 폴더 안의 운석들을 사용
@@ -154,6 +160,7 @@ public class Mover : MonoBehaviour {
 
 <br/>
 <br/>
+
 ## GameController
 
 C# 스크립트 GmaeController 생성 
@@ -221,6 +228,7 @@ public class GameController : MonoBehaviour {
 
 <br/>
 <br/>
+
 ## 우주선 총 만들기
 
 * GameObject > 3D Object > Quad 생성
@@ -257,6 +265,7 @@ unity에서 shot , firePosition 연결하기
 
 <br/>
 <br/>
+
 ## 충돌 구현하기
 
 C# 스크립트 DestoryByContact 생성
@@ -349,5 +358,6 @@ unity 에서 `playerExplosion` 연결하기
 
 <br/>
 <br/>
+
 ## 빌드
 
