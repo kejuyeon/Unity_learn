@@ -70,20 +70,23 @@ public class PlayerController : MonoBehaviour {
 ```
 
 
-#### Rigidbody
+* Rigidbody
 물리 시뮬레이션을 통해서 오브젝트의 위치를 조절합니다.
 리지드바디(rigidbody) 컴포넌트는 오브젝트의 위치를 제어합니다. - 중력의 영향에 의해 오브젝트를 아래로 떨어지도록 만들고,
 충돌에 대한 오브젝트의 반응의 크기를 계산할 수 있습니다.
 
-* velocity
-: 리지드바디의 속력 벡터를 나타냅니다.
+  * velocity : 리지드바디의 속력 벡터를 나타냅니다.
 
-* rotation
-: 리지드바디의 회전을 나타냅니다.
+  * rotation : 리지드바디의 회전을 나타냅니다.
 
 
-#### Quaternion
+* Quaternion
 쿼터니언(Quaternions)은 회전을 표현하기 위해 사용됩니다.
 
-* Euler
-: z축 주위로 z, x축 주위로 x, y축 주위로 y 각도만큼 회전한(순서대로) Rotation을 반환합니다.
+  * Euler : z축 주위로 z, x축 주위로 x, y축 주위로 y 각도만큼 회전한(순서대로) Rotation을 반환합니다.
+
+
+
+### 우주선이 화면 밖으로 넘어가지 않도록 수정
+
+Create Empty 추가
