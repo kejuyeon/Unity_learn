@@ -8,7 +8,7 @@
 
 * Window > Asset Store 에서 검색 Space Shooter > 추가
 
-![map](./README/asset store.png)
+![map](./README/assetstore.png)
 
 
 
@@ -92,7 +92,8 @@ public class PlayerController : MonoBehaviour {
 Create Empty 추가 > `box Collider` Component 추가
 
 
-![map](./README/creat Empty.png) 
+![map](./README/creatEmpty.png) 
+![map](./README/playerboxcollider.png) 
 
 
 
