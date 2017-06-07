@@ -91,6 +91,9 @@ public class PlayerController : MonoBehaviour {
 
 Create Empty 추가 > `box Collider` Component 추가
 
+```
+![map](./README/map.png) 
+```
 
 
 ## 운석 만들기
@@ -148,6 +151,10 @@ public class Mover : MonoBehaviour {
 C# 스크립트 GmaeController 생성 
 
 GameObject > Creat Empty 생성 후 GameController연결
+
+```
+![map](./README/map.png) 
+```
 
 public 변수 생성
 
