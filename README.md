@@ -10,18 +10,21 @@ Window > Asset Store
 검색 Space Shooter >  추가
 
 
+
 ## 배경 만들기
 
 GameObject > 3D Object > Quad 생성
-Mesh Render 의 Material 속성에 done_tile_nebula_green_dff
-scale x : 15, y : 30 수정
-MainCamera y : 10 rotation x : 90 수정
+Mesh Render 의 Material 속성에 `done_tile_nebula_green_dff`
+`scale x : 15, y : 30` 수정
+MainCamera `y : 10 rotation x : 90` 수정
 
 Prefabs > VFX > Starfield 추가
 
 ```
 ![map](./README/map.png) 
 ```
+
+
 
 ## 우주선 만들기
 
