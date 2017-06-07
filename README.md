@@ -1,6 +1,6 @@
 # Unity Learn
 
-## nstall
+## Install
 > https://store.unity.com/kr/download?ref=personal
 
 
