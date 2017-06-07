@@ -7,9 +7,9 @@
 ## Asset 추가하기
 
 * Window > Asset Store 에서 검색 Space Shooter > 추가
-```
-![map](./README/map.png)
-```
+
+![map](./README/asset store.png)
+
 
 
 
@@ -27,9 +27,9 @@
 
 * Prefabs > VFX > Starfield 파일 드래그해서 추가
 
-```
-![map](./README/map.png) 
-```
+
+![map](./README/background.png) 
+
 
 
 
@@ -91,9 +91,9 @@ public class PlayerController : MonoBehaviour {
 
 Create Empty 추가 > `box Collider` Component 추가
 
-```
-![map](./README/map.png) 
-```
+
+![map](./README/creat Empty.png) 
+
 
 
 ## 운석 만들기
@@ -152,9 +152,6 @@ C# 스크립트 GmaeController 생성
 
 GameObject > Creat Empty 생성 후 GameController연결
 
-```
-![map](./README/map.png) 
-```
 
 public 변수 생성
 
@@ -168,9 +165,7 @@ public GameObject[] hazards;
 
 unity 에서 public으로 생성된 변수에 값 연결하기
 
-```
-![map](./README/map.png)
-```
+![map](./README/gameController.png) 
 
 
 GameController.cs
