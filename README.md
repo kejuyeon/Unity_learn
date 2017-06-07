@@ -1,24 +1,31 @@
 # Unity Learn
 
 ## Install
-> https://store.unity.com/kr/download?ref=personal
+* https://store.unity.com/kr/download?ref=personal
 
 
 ## Asset 추가하기
 
-Window > Asset Store
-검색 Space Shooter >  추가
+* Window > Asset Store 에서 검색 Space Shooter > 추가
+```
+![map](./README/map.png)
+```
 
 
 
 ## 배경 만들기
 
-GameObject > 3D Object > Quad 생성
-Mesh Render 의 Material 속성에 `done_tile_nebula_green_dff`
-`scale x : 15, y : 30` 수정
-MainCamera `y : 10 rotation x : 90` 수정
+* GameObject > 3D Object > Quad 생성
 
-Prefabs > VFX > Starfield 추가
+* Quad 이름 Background 로 변경
+
+* Mesh Render 의 Material 속성에 `Textures > done_tile_nebula_green_dff` 속성 안으로 드래그해서 추가
+
+* `scale x : 15, y : 30` 수정
+
+* MainCamera `y : 10 rotation x : 90` 수정
+
+* Prefabs > VFX > Starfield 파일 드래그해서 추가
 
 ```
 ![map](./README/map.png) 
@@ -28,9 +35,13 @@ Prefabs > VFX > Starfield 추가
 
 ## 우주선 만들기
 
-
+* vehicle_playerShip 드래그해서 추가
+* PlayerController C# 스트립트 생성
+* vehicle_playerShip 에 스트립크 연결
 
 ### PlayerController.cs
+
+방향키로 우주선 움직이도록 스크립트 수정
 
 ```
 using UnityEngine;
