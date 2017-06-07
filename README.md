@@ -1,5 +1,7 @@
 # Unity Learn
 
+<br/>
+<br/>
 ## Install
 * https://store.unity.com/kr/download?ref=personal
 
@@ -31,7 +33,7 @@
 ![map](./README/background.png) 
 
 
-
+<br/>
 
 ## 우주선 만들기
 
@@ -95,7 +97,7 @@ Create Empty 추가 > `box Collider` Component 추가
 ![map](./README/creatEmpty.png) 
 ![map](./README/playerboxcollider.png) 
 
-
+<br/>
 
 ## 운석 만들기
 
@@ -146,7 +148,7 @@ public class Mover : MonoBehaviour {
 
 프로젝트에서 asteroid 폴더 생성 폴더안에 `prop_asteroid_01, prop_asteroid_02,prop_asteroid_03` 넣고 Hierarchy 의 `prop_asteroid_01, prop_asteroid_02, prop_asteroid_03`은 삭제
 
-
+<br/>
 ## GameController
 
 C# 스크립트 GmaeController 생성 
@@ -212,7 +214,7 @@ public class GameController : MonoBehaviour {
 
 
 
-
+<br/>
 ## 우주선 총 만들기
 
 * GameObject > 3D Object > Quad 생성
@@ -247,7 +249,7 @@ unity에서 shot , firePosition 연결하기
 
 
 
-
+<br/>
 ## 충돌 구현하기
 
 C# 스크립트 DestoryByContact 생성
@@ -336,8 +338,8 @@ void OnTriggerEnter(Collider other) {
 
 unity 에서 `playerExplosion` 연결하기
 
-테스트
 
 
+<br/>
 ## 빌드
 
