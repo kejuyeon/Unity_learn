@@ -2,10 +2,12 @@
 
 <br/>
 <br/>
+<br/>
 ## Install
 * https://store.unity.com/kr/download?ref=personal
 
-
+<br/>
+<br/>
 ## Asset 추가하기
 
 * Window > Asset Store 에서 검색 Space Shooter > 추가
@@ -14,7 +16,8 @@
 
 
 
-
+<br/>
+<br/>
 ## 배경 만들기
 
 * GameObject > 3D Object > Quad 생성
@@ -34,7 +37,7 @@
 
 
 <br/>
-
+<br/>
 ## 우주선 만들기
 
 * vehicle_playerShip 드래그해서 추가
@@ -88,7 +91,7 @@ public class PlayerController : MonoBehaviour {
   * Euler : z축 주위로 z, x축 주위로 x, y축 주위로 y 각도만큼 회전한(순서대로) Rotation을 반환합니다.
 
 
-
+<br/>
 ### 우주선이 화면 밖으로 넘어가지 않도록 수정
 
 Create Empty 추가 > `box Collider` Component 추가
@@ -97,8 +100,9 @@ Create Empty 추가 > `box Collider` Component 추가
 ![map](./README/creatEmpty.png) 
 ![map](./README/playerboxcollider.png) 
 
-<br/>
 
+<br/>
+<br/>
 ## 운석 만들기
 
 Models 폴더 안의 운석들을 사용
@@ -148,6 +152,7 @@ public class Mover : MonoBehaviour {
 
 프로젝트에서 asteroid 폴더 생성 폴더안에 `prop_asteroid_01, prop_asteroid_02,prop_asteroid_03` 넣고 Hierarchy 의 `prop_asteroid_01, prop_asteroid_02, prop_asteroid_03`은 삭제
 
+<br/>
 <br/>
 ## GameController
 
@@ -215,6 +220,7 @@ public class GameController : MonoBehaviour {
 
 
 <br/>
+<br/>
 ## 우주선 총 만들기
 
 * GameObject > 3D Object > Quad 생성
@@ -249,6 +255,7 @@ unity에서 shot , firePosition 연결하기
 
 
 
+<br/>
 <br/>
 ## 충돌 구현하기
 
@@ -340,6 +347,7 @@ unity 에서 `playerExplosion` 연결하기
 
 
 
+<br/>
 <br/>
 ## 빌드
 
