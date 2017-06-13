@@ -108,6 +108,47 @@ public class BirdController : MonoBehaviour {
 }
 ```
 
+### Bird Animation
 
+```
+using UnityEngine;
+using System.Collections;
+
+public class BirdController : MonoBehaviour {
+
+	Rigidbody2D bird;
+	Animator anim;
+	bool isDead = false;
+	float upForce = 200f;
+
+	void Start () {
+		bird = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
+	}
+	
+	void Update () {
+		if (isDead == false) {
+
+			if(Input.GetKeyDown("space")) {
+
+				bird.velocity = Vector2.zero;
+				// jump
+				bird.AddForce(new Vector2(0, upForce));
+				// animation 추가
+				anim.SetTrigger("Jump");
+			}
+		}
+	}
+
+	// Sent when an incoming collider makes contact with this object's collider (2D physics only).
+	// 객체 충돌할때 호출
+	void OnCollisionEnter2D(Collision2D other) {
+		isDead = true;
+		// animation 추가
+		anim.SetTrigger("Die");
+	}
+}
+
+```
 
 
