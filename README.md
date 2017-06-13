@@ -13,7 +13,8 @@
 
 ## Background
 
-### Background scrolling
+
+### Background scrolling `ScrollingObject.cs`
 
 ```
 using UnityEngine;
@@ -38,7 +39,8 @@ public class ScrollingObject : MonoBehaviour {
 
 ```
 
-### Background Repeat
+### Background Repeat `RepeatObject.cs`
+
 ```
 using UnityEngine;
 using System.Collections;
@@ -47,8 +49,7 @@ public class RepeatObject : MonoBehaviour {
 
 	BoxCollider2D groundCollider;
 	float horizontalLength;
-
-	// Use this for initialization
+	
 	void Start () {
 		groundCollider = GetComponent<BoxCollider2D>();
 		horizontalLength = groundCollider.size.x;
@@ -65,4 +66,48 @@ public class RepeatObject : MonoBehaviour {
 	}
 }
 ```
+
+
+
+## Bird
+
+
+### bird Setting `BirdController.cs`
+
+```
+using UnityEngine;
+using System.Collections;
+
+public class BirdController : MonoBehaviour {
+
+	Rigidbody2D bird;
+	bool isDead = false;
+	float upForce = 200f;
+
+	void Start () {
+		bird = GetComponent<Rigidbody2D>();
+	}
+	
+	void Update () {
+		if (isDead == false) {
+
+			if(Input.GetKeyDown("space")) {
+
+				bird.velocity = Vector2.zero;
+				// jump
+				bird.AddForce(new Vector2(0, upForce));
+			}
+		}
+	}
+
+	// Sent when an incoming collider makes contact with this object's collider (2D physics only).
+	// 객체 충돌할때 호출
+	void OnCollisionEnter2D(Collision2D other) {
+		isDead = true;
+	}
+}
+```
+
+
+
 
