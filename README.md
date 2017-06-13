@@ -14,7 +14,8 @@
 ## Background
 
 
-### Background scrolling `ScrollingObject.cs`
+* ### Background scrolling 
+`ScrollingObject.cs`
 
 ```c#
 using UnityEngine;
@@ -39,7 +40,8 @@ public class ScrollingObject : MonoBehaviour {
 
 ```
 
-### Background Repeat `RepeatObject.cs`
+* ### Background Repeat 
+`RepeatObject.cs`
 
 ```c#
 using UnityEngine;
@@ -73,7 +75,8 @@ public class RepeatObject : MonoBehaviour {
 ## Bird
 
 
-### bird Setting `BirdController.cs`
+* ### bird Setting 
+`BirdController.cs`
 
 ```c#
 using UnityEngine;
@@ -109,8 +112,9 @@ public class BirdController : MonoBehaviour {
 }
 ```
 
-### Bird Animation
+* ### Bird Animation
 
+`BirdController.cs`
 - **`anim.SetTrigger("Jump");`**  **`anim.SetTrigger("Die");`** 추가
 
 ```c#
@@ -159,10 +163,10 @@ public class BirdController : MonoBehaviour {
 
 ## Text
 
-### ScoreText
+* ### ScoreText
 
 
-- GameController.cs
+`GameController.cs`
 
 ```c#
 using UnityEngine;
@@ -211,7 +215,9 @@ public class GameController : MonoBehaviour {
 }
 ```
 
-- BirdController.cs
+<br/>
+
+`BirdController.cs`
 
 ```c#
 ...
@@ -225,7 +231,10 @@ public class GameController : MonoBehaviour {
 ...
 ```
 
-- ScrollingObject.cs
+<br/>
+
+`ScrollingObject.cs`
+
 ```c#
 ...
 	void Update () {
@@ -243,7 +252,10 @@ public class GameController : MonoBehaviour {
 
 ## Pipes
 
-### pipe 충돌 처리
+* ### pipe 충돌 처리
+
+<br/>
+`PipesController.cs`
 
 ```c#
 using UnityEngine;
@@ -267,6 +279,8 @@ public class PipesController : MonoBehaviour {
 >The time in seconds it took to complete the last frame (Read Only).
 
 <br/>
+
+`PipesPool.cs`
 
 ```c#
 using UnityEngine;
