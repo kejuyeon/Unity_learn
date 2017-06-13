@@ -204,6 +204,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void GetGameOver() {
+		// Text 보여주기
 		gameOverText.SetActive(true);
 		gameOver = true;
 	}
@@ -235,3 +236,81 @@ public class GameController : MonoBehaviour {
 		}
 	}
 ```
+
+
+<br/>
+<br/>
+
+## Pipes
+
+### pipe 충돌 처리
+
+```c#
+using UnityEngine;
+using System.Collections;
+
+public class PipesController : MonoBehaviour {
+
+	void OnTriggerEnter2D(Collider2D other) {
+		// 통과하면 점수 추가
+		if (other.GetComponent<BirdController>() != null) {
+			GameController.instance.AddScore();
+		}
+	}
+}
+```
+
+
+### pipe 반복처리
+
+> - Time.deltaTime
+>The time in seconds it took to complete the last frame (Read Only).
+
+<br/>
+
+```c#
+using UnityEngine;
+using System.Collections;
+
+public class PipesPool : MonoBehaviour {
+
+	public GameObject perfabs;
+	GameObject[] pipes;
+
+	int pipesPoolSize = 5;
+	Vector2 objectPosition = new Vector2(-15f, -30f);
+	int current = 0;
+	float lastTime = 2f;
+
+	void Start () {
+	
+		// pipe 저장하기
+		pipes = new GameObject[pipesPoolSize];
+
+		for(int i = 0; i < pipesPoolSize; i++) {
+			pipes[i] = (GameObject) Instantiate(perfabs, objectPosition, Quaternion.identity);
+		}
+	}
+	
+	void Update () {
+	
+		lastTime += Time.deltaTime;
+
+		if(GameController.instance.gameOver == false && lastTime >= 4f) {
+
+			// 파이프 짠
+			float YPosition = Random.Range(-1.5f, 2f);
+			pipes[current].transform.position = new Vector2(5f, YPosition);
+
+			current++;
+			lastTime = 0;
+
+			if (current >= pipesPoolSize) {
+				current = 0;
+			}
+		}
+	}
+}
+
+```
+
