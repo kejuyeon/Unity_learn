@@ -67,7 +67,8 @@ public class RepeatObject : MonoBehaviour {
 }
 ```
 
-
+<br/>
+<br/>
 
 ## Bird
 
@@ -153,5 +154,84 @@ public class BirdController : MonoBehaviour {
 
 ```
 
+<br/>
+<br/>
+
+## Text
+
+### ScoreText
 
 
+- GameController.cs
+
+```c#
+using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class GameController : MonoBehaviour {
+
+	public static GameController instance;
+
+	public bool gameOver = false;
+	int score = 0;
+	public GameObject gameOverText;
+	public Text scoreText;
+
+	void Awake() {
+
+		if(instance == null) {
+			instance = this;
+		} else if (instance != this) {
+			Destroy(gameObject);
+		}
+	}
+	
+	void Update () {
+
+		if (gameOver && Input.GetKeyDown(KeyCode.R)) {
+			// restart
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+	}
+
+	public void AddScore() {
+		if(gameOver == false) {
+			score++;
+			scoreText.text = "SCORE : " + score.ToString();
+		}
+	}
+
+	public void GetGameOver() {
+		gameOverText.SetActive(true);
+		gameOver = true;
+	}
+}
+```
+
+- BirdController.cs
+
+```c#
+...
+	void OnCollisionEnter2D(Collision2D other) {
+		isDead = true;
+		// animation 추가
+		anim.SetTrigger("Die");
+		
+		GameController.instance.GetGameOver();
+	}
+...
+```
+
+- ScrollingObject.cs
+```c#
+...
+	void Update () {
+	
+		// gameover 일때 멈춤
+		if( GameController.instance.gameOver == true ) {
+			background.velocity = Vector2.zero;
+		}
+	}
+```
