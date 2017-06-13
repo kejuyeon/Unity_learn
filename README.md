@@ -16,7 +16,7 @@
 
 ### Background scrolling `ScrollingObject.cs`
 
-```ruby
+```c#
 using UnityEngine;
 using System.Collections;
 
@@ -41,7 +41,7 @@ public class ScrollingObject : MonoBehaviour {
 
 ### Background Repeat `RepeatObject.cs`
 
-```ruby
+```c#
 using UnityEngine;
 using System.Collections;
 
@@ -74,7 +74,7 @@ public class RepeatObject : MonoBehaviour {
 
 ### bird Setting `BirdController.cs`
 
-```ruby
+```c#
 using UnityEngine;
 using System.Collections;
 
@@ -110,9 +110,9 @@ public class BirdController : MonoBehaviour {
 
 ### Bird Animation
 
-> `anim.SetTrigger("Jump");`  `anim.SetTrigger("Die");` 추가
+- **`anim.SetTrigger("Jump");`**  **`anim.SetTrigger("Die");`** 추가
 
-```ruby
+```c#
 using UnityEngine;
 using System.Collections;
 
